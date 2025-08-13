@@ -1,0 +1,14 @@
+return {
+
+  require('mason-lspconfig').setup_handlers {
+    function(server_name)
+      if server_name == 'djlint' then
+        require('lspconfig').djlint.setup {
+          filetypes = { 'html', 'htmldjango' }, -- Add other filetypes if needed
+        }
+      else
+        require('lspconfig')[server_name].setup {}
+      end
+    end,
+  },
+}

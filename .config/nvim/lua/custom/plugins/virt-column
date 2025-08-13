@@ -1,0 +1,17 @@
+return {
+  { 'lukas-reineke/virt-column.nvim', opts = {
+
+require('virt-column').setup {
+  char = '‖',
+  virtcolumn = '80',
+}
+
+} },
+}
+
+comment
+require('virt-column').setup {
+  char = '‖',
+  virtcolumn = '80',
+}
+endcomment
