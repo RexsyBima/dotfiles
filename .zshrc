@@ -105,7 +105,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 fastfetch
-alias fnv='nvim $(fzf -m --preview="bat --color=always {}")'
 eval "$(zoxide init zsh)"
 
 export OPENAI_API_KEY=api_key_here
@@ -123,7 +122,7 @@ alias fafo='realpath "$(find . -type d | fzf)" | wl-copy'
 alias svim='sudo HOME=$HOME nvim'
 
 
-fnv() {
+fvim() {
   files=$(fzf -m --preview="bat --color=always {}")
   [[ -z "$files" ]] && return  # Exit if no file selected (e.g., Escape pressed)
   nvim $files
@@ -132,5 +131,3 @@ fnv() {
 
 
 alias penv='source ./.venv/bin/activate'
-
-
