@@ -20,6 +20,7 @@ packages=(
   "android-tools"
   "tmux"
   "zsh"
+  "youtube-music-bin"
 )
 
 # Install packages
