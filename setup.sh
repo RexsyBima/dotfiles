@@ -41,4 +41,7 @@ sed -i 's/^plugins=(.*)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting
 
 echo "Installation and configuration complete."
 
+# install Tmux Plugin Manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 chsh -s $(which zsh)
