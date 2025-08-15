@@ -21,6 +21,9 @@ packages=(
   "tmux"
   "zsh"
   "youtube-music-bin"
+  "brave-bin"
+  "uv"
+  "npm"
 )
 
 # Install packages
