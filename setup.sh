@@ -24,6 +24,7 @@ packages=(
   "brave-bin"
   "uv"
   "nvm"
+  "qwen-code"
 )
 
 # Install packages
