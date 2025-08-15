@@ -6,8 +6,8 @@
 
 # Check if the script is run as root
 if [[ $EUID -eq 0 ]]; then
-   echo "This script should not be run as root."
-   exit 1
+  echo "This script should not be run as root."
+  exit 1
 fi
 
 # Update the package database
@@ -40,3 +40,6 @@ echo "Configuring .zshrc plugins..."
 sed -i 's/^plugins=(.*)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/' ~/.zshrc
 
 echo "Installation and configuration complete."
+
+sudo chsh -s $(which zsh)
+
