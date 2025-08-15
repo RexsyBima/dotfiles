@@ -23,7 +23,7 @@ packages=(
   "youtube-music-bin"
   "brave-bin"
   "uv"
-  "npm"
+  "nvm"
 )
 
 # Install packages
