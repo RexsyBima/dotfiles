@@ -41,5 +41,4 @@ sed -i 's/^plugins=(.*)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting
 
 echo "Installation and configuration complete."
 
-sudo chsh -s $(which zsh)
-
+chsh -s $(which zsh)
