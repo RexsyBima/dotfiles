@@ -131,3 +131,4 @@ fvim() {
 
 
 alias penv='source ./.venv/bin/activate'
+alias lazyvim='NVIM_APPNAME="lazyvim" nvim'
